@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(120deg, #fbc2e9, #a1c4fd);
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #1e3a8a;
+    color: white;
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+/* Form Section */
+.form-section {
+    flex: 1;
+    min-width: 300px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.form-section h2 {
+    margin-bottom: 15px;
+}
+
+.form-section input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+}
+
+.form-section button {
+    width: 100%;
+    padding: 10px;
+    background-color: #258beb;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Table Section */
+.table-section {
+    flex: 2;
+    min-width: 320px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.table-wrapper {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+/* Dynamic scrollbar */
+.table-wrapper::-webkit-scrollbar {
+    width: 8px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+    background-color: #2563eb;
+    border-radius: 4px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+button.action-btn {
+    margin: 2px;
+    padding: 5px 8px;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+    .container {
+        flex-direction: column;
+    }
+}
