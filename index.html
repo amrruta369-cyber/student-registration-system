@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A simple student registration system using JavaScript DOM manipulation"
+    />
+    <title>Student Registration System</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Student Registration System</h1>
+      <p>Register, update, and manage student records seamlessly</p>
+    </header>
+
+    <main class="container">
+      <!-- Registration Form -->
+      <section class="form-section">
+        <h2>Register Student</h2>
+
+        <form id="studentForm">
+          <input type="text" id="studentName" placeholder="Student Name" />
+          <input type="text" id="studentId" placeholder="Student ID" />
+          <input type="email" id="email" placeholder="Email ID" />
+          <input type="text" id="contact" placeholder="Contact Number" />
+
+          <button type="submit">Add Student</button>
+        </form>
+      </section>
+
+      <!-- Display Section -->
+      <section class="table-section">
+        <h2>Registered Students</h2>
+
+        <div class="table-wrapper" id="tableWrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>ID</th>
+                <th>Email</th>
+                <th>Contact</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="studentTable"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
